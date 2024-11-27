@@ -15,7 +15,7 @@ y = data['diabetes']
 x = data.drop("diabetes", axis=1)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 
-rf_model = RandomForestClassifier()1
+rf_model = RandomForestClassifier()
 rf_model.fit(x_train, y_train)
 
 st.markdown("""
